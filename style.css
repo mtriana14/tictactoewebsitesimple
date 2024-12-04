@@ -13,6 +13,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f4f8;
+    position: relative;
 }
 
 #game-container {
@@ -84,11 +85,33 @@ button:hover {
     margin-top: 20px;
 }
 
+/* Credits Button */
+#credits {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#credits a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+#credits a:hover {
+    color: #4CAF50; /* Changes color when hovered */
+}
+
 /* Responsive design */
 @media (max-width: 480px) {
     #game-container {
         width: 260px;
-        height: auto;
+        height: 18px;
     }
 
     h1 {
